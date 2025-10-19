@@ -1,4 +1,4 @@
-// server.js
+
 
 const express = require('express');
 const path = require('path');
@@ -60,3 +60,4 @@ app.get('/protected-data', authenticateBearerToken, (req, res) => {
 app.listen(PORT, () => {
     console.log(`✅ Server running at http://localhost:${PORT}`);
 });
+
